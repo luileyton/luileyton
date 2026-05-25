@@ -1,118 +1,173 @@
-<!DOCTYPE html><html class="dark" lang="es" style=""><head>
-<meta charset="utf-8">
-<meta content="width=device-width, initial-scale=1.0" name="viewport">
-<title>Luis Leyton | Ingeniero del Futuro</title>
-<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
-<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&amp;family=Inter:wght@300;400;600&amp;display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet">
-<script id="tailwind-config">
-      tailwind.config = {
-        darkMode: "class",
-        theme: {
-          extend: {
-            "colors": {
-                    "on-error-container": "#ffdad6",
-                    "on-surface-variant": "#c4c7c7",
-                    "tertiary-fixed-dim": "#00dce6",
-                    "on-background": "#e5e2e1",
-                    "secondary-fixed-dim": "#adc7ff",
-                    "primary-container": "#050505",
-                    "on-surface": "#e5e2e1",
-                    "primary": "#c9c6c5",
-                    "outline-variant": "#444748",
-                    "surface-container-low": "#1c1b1b",
-                    "on-tertiary-container": "#00848b",
-                    "secondary-fixed": "#d8e2ff",
-                    "inverse-primary": "#5f5e5e",
-                    "surface-variant": "#353434",
-                    "surface-bright": "#3a3939",
-                    "surface-container-high": "#2b2a2a",
-                    "surface-tint": "#c9c6c5",
-                    "on-primary": "#313030",
-                    "on-tertiary": "#00373a",
-                    "secondary-container": "#4a8eff",
-                    "surface-container-highest": "#353434",
-                    "on-secondary-fixed-variant": "#004493",
-                    "surface": "#141313",
-                    "outline": "#8e9192",
-                    "surface-container-lowest": "#0e0e0e",
-                    "tertiary-container": "#000607",
-                    "on-secondary-container": "#00285b",
-                    "surface-container": "#201f1f",
-                    "primary-fixed": "#e5e2e1",
-                    "surface-dim": "#141313",
-                    "primary-fixed-dim": "#c9c6c5",
-                    "tertiary": "#00dce6",
-                    "error": "#ffb4ab",
-                    "secondary": "#adc7ff",
-                    "on-tertiary-fixed-variant": "#004f53",
-                    "inverse-surface": "#e5e2e1",
-                    "on-error": "#690005",
-                    "tertiary-fixed": "#6ff6ff",
-                    "on-secondary-fixed": "#001a41",
-                    "on-primary-fixed": "#1c1b1b",
-                    "on-primary-fixed-variant": "#474646",
-                    "on-tertiary-fixed": "#002022",
-                    "on-primary-container": "#797777",
-                    "error-container": "#93000a",
-                    "on-secondary": "#002e68",
-                    "inverse-on-surface": "#313030",
-                    "background": "#141313"
+<!DOCTYPE html>
+<html class="dark" lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Luis Leyton | Ingeniero del Futuro</title>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet">
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    "colors": {
+                        "on-error-container": "#ffdad6",
+                        "on-surface-variant": "#c4c7c7",
+                        "tertiary-fixed-dim": "#00dce6",
+                        "on-background": "#e5e2e1",
+                        "secondary-fixed-dim": "#adc7ff",
+                        "primary-container": "#050505",
+                        "on-surface": "#e5e2e1",
+                        "primary": "#c9c6c5",
+                        "outline-variant": "#444748",
+                        "surface-container-low": "#1c1b1b",
+                        "on-tertiary-container": "#00848b",
+                        "secondary-fixed": "#d8e2ff",
+                        "inverse-primary": "#5f5e5e",
+                        "surface-variant": "#353434",
+                        "surface-bright": "#3a3939",
+                        "surface-container-high": "#2b2a2a",
+                        "surface-tint": "#c9c6c5",
+                        "on-primary": "#313030",
+                        "on-tertiary": "#00373a",
+                        "secondary-container": "#4a8eff",
+                        "surface-container-highest": "#353434",
+                        "on-secondary-fixed-variant": "#004493",
+                        "surface": "#141313",
+                        "outline": "#8e9192",
+                        "surface-container-lowest": "#0e0e0e",
+                        "tertiary-container": "#000607",
+                        "on-secondary-container": "#00285b",
+                        "surface-container": "#201f1f",
+                        "primary-fixed": "#e5e2e1",
+                        "surface-dim": "#141313",
+                        "primary-fixed-dim": "#c9c6c5",
+                        "tertiary": "#00dce6",
+                        "error": "#ffb4ab",
+                        "secondary": "#adc7ff",
+                        "on-tertiary-fixed-variant": "#004f53",
+                        "inverse-surface": "#e5e2e1",
+                        "on-error": "#690005",
+                        "tertiary-fixed": "#6ff6ff",
+                        "on-secondary-fixed": "#001a41",
+                        "on-primary-fixed": "#1c1b1b",
+                        "on-primary-fixed-variant": "#474646",
+                        "on-tertiary-fixed": "#002022",
+                        "on-primary-container": "#797777",
+                        "error-container": "#93000a",
+                        "on-secondary": "#002e68",
+                        "inverse-on-surface": "#313030",
+                        "background": "#141313"
+                    },
+                    "borderRadius": {
+                        "DEFAULT": "0px",
+                        "lg": "2px",
+                        "xl": "4px",
+                        "full": "9999px"
+                    },
+                    "spacing": {
+                        "margin-mobile": "20px",
+                        "container-max": "1440px",
+                        "margin-desktop": "80px",
+                        "gutter": "24px",
+                        "unit": "8px"
+                    },
+                    "fontFamily": {
+                        "display-lg": ["Space Grotesk"],
+                        "label-caps": ["Space Grotesk"],
+                        "body-lg": ["Inter"],
+                        "body-md": ["Inter"],
+                        "headline-md": ["Space Grotesk"]
+                    },
+                    "fontSize": {
+                        "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
+                        "display-lg-mobile": ["40px", {"lineHeight": "1.1", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                        "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.2em", "fontWeight": "600"}],
+                        "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
+                        "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
+                        "headline-md": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "500"}]
+                    }
+                },
             },
-            "borderRadius": {
-                    "DEFAULT": "0.25rem",
-                    "lg": "0.5rem",
-                    "xl": "0.75rem",
-                    "full": "9999px"
-            },
-            "spacing": {
-                    "margin-mobile": "20px",
-                    "container-max": "1440px",
-                    "margin-desktop": "80px",
-                    "gutter": "24px",
-                    "unit": "8px"
-            },
-            "fontFamily": {
-                    "display-lg": ["Space Grotesk"],
-                    "label-caps": ["Space Grotesk"],
-                    "body-lg": ["Inter"],
-                    "body-md": ["Inter"],
-                    "headline-md": ["Space Grotesk"]
-            },
-            "fontSize": {
-                    "display-lg": ["72px", {"lineHeight": "1.1", "letterSpacing": "-0.04em", "fontWeight": "700"}],
-                    "label-caps": ["12px", {"lineHeight": "1", "letterSpacing": "0.2em", "fontWeight": "600"}],
-                    "body-lg": ["18px", {"lineHeight": "1.6", "fontWeight": "400"}],
-                    "body-md": ["16px", {"lineHeight": "1.5", "fontWeight": "400"}],
-                    "headline-md": ["32px", {"lineHeight": "1.2", "letterSpacing": "-0.01em", "fontWeight": "500"}]
-            }
-          },
-        },
-      }
+        }
     </script>
-<style>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
         body {
             background-color: #050505;
             color: #e5e2e1;
             overflow-x: hidden;
             cursor: none;
+            position: relative;
         }
 
+        /* Gradient Background Accents */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: -10%;
+            width: 30%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(0, 123, 255, 0.08) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        body::after {
+            content: '';
+            position: fixed;
+            bottom: 0;
+            right: -5%;
+            width: 40%;
+            height: 50%;
+            background: radial-gradient(circle, rgba(189, 0, 255, 0.06) 0%, transparent 70%);
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        main {
+            position: relative;
+            z-index: 1;
+        }
+
+        /* Cinematic Glassmorphism */
         .glass-panel {
             background: rgba(255, 255, 255, 0.03);
             backdrop-filter: blur(20px);
             -webkit-backdrop-filter: blur(20px);
             border: 1px solid rgba(255, 255, 255, 0.08);
+            border-radius: 0px;
         }
 
+        .glass-panel-lg {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(30px);
+            -webkit-backdrop-filter: blur(30px);
+            border: 1px solid rgba(0, 220, 230, 0.1);
+        }
+
+        /* Neon Glows */
         .neon-glow-cyan {
-            box-shadow: 0 0 15px rgba(0, 220, 230, 0.3);
+            box-shadow: 0 0 20px rgba(0, 220, 230, 0.4);
         }
 
+        .neon-glow-blue {
+            box-shadow: 0 0 15px rgba(0, 123, 255, 0.3);
+        }
+
+        /* Custom Cursor */
         .custom-cursor {
             width: 20px;
             height: 20px;
-            border: 1px solid #00dce6;
+            border: 1.5px solid #00dce6;
             border-radius: 50%;
             position: fixed;
             pointer-events: none;
@@ -127,9 +182,10 @@
             border-radius: 50%;
             position: fixed;
             pointer-events: none;
-            z-index: 9999;
+            z-index: 9998;
         }
 
+        /* Animations */
         .reveal {
             opacity: 0;
             transform: translateY(30px);
@@ -152,6 +208,11 @@
             100% { transform: translateY(100%); }
         }
 
+        @keyframes pulse-glow {
+            0%, 100% { opacity: 0.4; }
+            50% { opacity: 1; }
+        }
+
         .scanline-overlay {
             position: fixed;
             top: 0;
@@ -170,219 +231,382 @@
             left: 0;
             width: 100%;
             height: 100%;
-            z-index: -1;
+            z-index: 0;
         }
 
         .card-3d {
             transform-style: preserve-3d;
-            transition: transform 0.5s ease-out;
+            transition: transform 0.5s ease-out, box-shadow 0.3s ease;
         }
 
         .card-3d:hover {
-            box-shadow: 0 0 30px rgba(0, 220, 230, 0.2);
+            box-shadow: 0 0 40px rgba(0, 220, 230, 0.3);
         }
 
         .progress-bar-fill {
             transition: width 1.5s cubic-bezier(0.65, 0, 0.35, 1);
         }
+
+        /* Navigation */
+        nav {
+            z-index: 100;
+        }
+
+        /* Hero Typography */
+        h1 {
+            letter-spacing: -0.04em;
+        }
+
+        /* Button Styles */
+        .btn-primary {
+            background: #00dce6;
+            border: 2px solid #00dce6;
+            color: #00373a;
+            font-weight: 700;
+            position: relative;
+            overflow: hidden;
+            transition: all 0.3s ease;
+        }
+
+        .btn-primary::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 220, 230, 0.2);
+            transition: left 0.3s ease;
+        }
+
+        .btn-primary:hover::before {
+            left: 100%;
+        }
+
+        .btn-primary:hover {
+            box-shadow: 0 0 20px rgba(0, 220, 230, 0.5);
+        }
+
+        .btn-ghost {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            color: #e5e2e1;
+            background: transparent;
+            transition: all 0.3s ease;
+        }
+
+        .btn-ghost:hover {
+            border-color: #00dce6;
+            color: #00dce6;
+            background: rgba(0, 220, 230, 0.05);
+            box-shadow: 0 0 15px rgba(0, 220, 230, 0.2);
+        }
+
+        /* Input Styles */
+        input, textarea {
+            background: transparent !important;
+            border: none !important;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.2) !important;
+            color: #e5e2e1 !important;
+            font-family: 'Inter', sans-serif;
+            transition: all 0.3s ease;
+        }
+
+        input::placeholder, textarea::placeholder {
+            color: rgba(255, 255, 255, 0.1) !important;
+        }
+
+        input:focus, textarea:focus {
+            outline: none !important;
+            border-bottom-color: #00dce6 !important;
+            box-shadow: 0 2px 0 #00dce6;
+        }
+
+        /* Chips */
+        .chip {
+            background: rgba(0, 220, 230, 0.1);
+            color: #00dce6;
+            border: none;
+            padding: 4px 12px;
+            font-size: 11px;
+            font-weight: 600;
+            letter-spacing: 0.1em;
+        }
+
+        /* Section Spacing */
+        section {
+            position: relative;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            h1 {
+                font-size: 40px;
+                letter-spacing: -0.02em;
+            }
+
+            .display-lg-mobile {
+                font-size: 40px;
+                font-weight: 700;
+                line-height: 1.1;
+                letter-spacing: -0.02em;
+            }
+        }
     </style>
 </head>
 <body class="font-body-md">
-<div class="custom-cursor hidden md:block" id="cursor" style="left: 27px; top: 4382px;"></div>
-<div class="cursor-dot hidden md:block" id="dot" style="left: 27px; top: 4382px;"></div>
-<div class="scanline-overlay"></div>
-<div class="canvas-container" id="particles-js">
-<canvas id="hero-canvas" width="1280" height="4639"></canvas>
-</div>
-<!-- TopNavBar -->
-<nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] rounded-xl border border-white/10 bg-surface/5 backdrop-blur-xl shadow-[0_0_20px_rgba(0,220,230,0.15)] flex justify-between items-center px-8 py-4 max-w-container-max mx-auto z-50 transition-all duration-500 ease-out hover:scale-[1.02]">
-<div class="font-display-lg text-headline-md font-bold tracking-tighter text-on-surface">LL</div>
-<div class="hidden md:flex gap-8 items-center">
-<a class="font-display-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#work">Proyectos</a>
-<a class="font-display-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#skills">Habilidades</a>
-<a class="font-display-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#about">Sobre Mí</a>
-<a class="font-display-lg text-on-surface-variant hover:text-on-surface transition-colors" href="#contact">Contacto</a>
-</div>
-<button class="bg-tertiary px-6 py-2 rounded-sm font-label-caps text-on-tertiary font-bold hover:shadow-[0_0_15px_rgba(0,220,230,0.5)] transition-all">Contratar</button>
-</nav>
-<main>
-<!-- Hero Section -->
-<section class="relative min-h-screen flex flex-col items-center justify-center pt-32 px-margin-mobile md:px-margin-desktop overflow-hidden" id="hero">
-<div class="absolute top-1/4 left-10 w-32 h-32 bg-tertiary/10 rounded-full blur-[100px]"></div>
-<div class="absolute bottom-1/4 right-10 w-48 h-48 bg-secondary/10 rounded-full blur-[120px]"></div>
-<div class="text-center z-10 max-w-4xl">
-<p class="font-label-caps text-tertiary tracking-[0.4em] mb-4 opacity-80 uppercase">Ingeniería de Dominios Digitales</p>
-<h1 class="font-display-lg text-display-lg md:text-[120px] mb-2 text-on-surface tracking-tighter leading-[0.9]" id="hero-name">
+    <div class="custom-cursor hidden md:block" id="cursor"></div>
+    <div class="cursor-dot hidden md:block" id="dot"></div>
+    <div class="scanline-overlay"></div>
+    <div class="canvas-container" id="particles-js">
+        <canvas id="hero-canvas"></canvas>
+    </div>
+
+    <!-- Top Navigation Bar -->
+    <nav class="fixed top-4 left-1/2 -translate-x-1/2 w-[90%] max-w-5xl rounded-none border border-white/10 bg-surface/5 backdrop-blur-2xl flex justify-between items-center px-6 py-3 md:px-8 md:py-4">
+        <div class="font-headline-md text-on-surface tracking-tighter">LL</div>
+        <div class="hidden md:flex gap-8 items-center">
+            <a class="font-label-caps text-xs text-on-surface-variant hover:text-on-surface transition-colors" href="#work">Proyectos</a>
+            <a class="font-label-caps text-xs text-on-surface-variant hover:text-on-surface transition-colors" href="#skills">Habilidades</a>
+            <a class="font-label-caps text-xs text-on-surface-variant hover:text-on-surface transition-colors" href="#about">Sobre Mí</a>
+            <a class="font-label-caps text-xs text-on-surface-variant hover:text-on-surface transition-colors" href="#contact">Contacto</a>
+        </div>
+        <button class="btn-primary px-6 py-2 text-xs">Contratar</button>
+    </nav>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="relative min-h-screen flex flex-col items-center justify-center pt-32 px-margin-mobile md:px-margin-desktop overflow-hidden" id="hero">
+            <!-- Atmospheric Depth Elements -->
+            <div class="absolute top-1/4 -left-20 w-96 h-96 bg-secondary/5 rounded-full blur-[150px] pointer-events-none"></div>
+            <div class="absolute bottom-1/3 -right-32 w-96 h-96 bg-tertiary/5 rounded-full blur-[150px] pointer-events-none"></div>
+
+            <div class="text-center z-10 max-w-4xl">
+                <p class="font-label-caps text-tertiary tracking-[0.4em] mb-6 opacity-80 uppercase text-xs">Ingeniería de Dominios Digitales</p>
+                <h1 class="font-display-lg text-display-lg md:text-[120px] mb-4 text-on-surface tracking-tighter leading-[0.9]">
                     LUIS LEYTON
                 </h1>
-<div class="h-12 md:h-16 flex items-center justify-center">
-<p class="font-display-lg text-headline-md text-on-surface-variant border-r-2 border-tertiary pr-2 h-full inline-block" id="typing-text">Especialist</p>
-</div>
-<div class="flex flex-col md:flex-row gap-6 justify-center mt-12">
-<a class="group relative px-10 py-4 overflow-hidden border-2 border-tertiary bg-tertiary text-on-tertiary font-label-caps font-bold transition-all hover:shadow-[0_0_20px_rgba(0,220,230,0.4)]" href="#work">
-<span class="relative z-10">Ver Proyectos</span>
-</a>
-<a class="px-10 py-4 border border-white/20 hover:border-tertiary hover:text-tertiary font-label-caps font-bold transition-all backdrop-blur-md" href="#contact">
+                <div class="h-12 md:h-16 flex items-center justify-center mb-8">
+                    <p class="font-headline-md text-on-surface-variant border-r-2 border-tertiary pr-3 inline-block" id="typing-text">Especialista</p>
+                </div>
+                <div class="flex flex-col md:flex-row gap-6 justify-center">
+                    <a class="btn-primary px-8 py-3 md:px-10 md:py-4 text-xs font-label-caps relative overflow-hidden">
+                        <span class="relative z-10">Ver Proyectos</span>
+                    </a>
+                    <a class="btn-ghost px-8 py-3 md:px-10 md:py-4 text-xs font-label-caps" href="#contact">
                         Contactar
                     </a>
-</div>
-</div>
-<div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
-<span class="font-label-caps text-[10px]">SCROLL PARA EXPLORAR</span>
-<div class="w-[1px] h-20 bg-gradient-to-b from-tertiary to-transparent animate-pulse"></div>
-</div>
-</section>
-<!-- About Section -->
-<section class="py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal active" id="about">
-<div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
-<div class="relative group">
-<div class="absolute -inset-4 bg-tertiary/20 blur-3xl rounded-full opacity-0 group-hover:opacity-30 transition-opacity"></div>
-<div class="glass-panel p-2 rounded-2xl rotate-2 group-hover:rotate-0 transition-transform duration-700">
-<img alt="Luis Leyton" class="w-full aspect-square object-cover rounded-xl" src="https://lh3.googleusercontent.com/aida/ADBb0ui01XELkUV3Pv9M_lO8GPYbYrTq4AUMbT_ZT2nk2ELOuwTvy4lhhDYWP3QbdB1EsngRnnkbbnaqgKrst9qWXLbT6AuYk2nOZ2nK75SUDrhYa3nWHzRbX-Fptn1PcCRJEm5mRLJBJAi1jjsKys28XzkMjUmXsGBnIPTziYeHw7MrQBqZCvoMiB7FLHygTDMayhhSVT4HPyewtgZJobeL_aXO4anbkaucFxqjml7PixGl0HLHNpZk5RJMl1eIxp8SAuRWMe4mQbyAkg">
-</div>
-<div class="absolute -bottom-8 -right-8 glass-panel p-6 rounded-xl border-tertiary/30 hidden md:block">
-<div class="text-tertiary font-display-lg text-headline-md">10+</div>
-<div class="font-label-caps text-[10px] text-on-surface-variant">AÑOS DE CÓDIGO</div>
-</div>
-</div>
-<div class="space-y-8">
-<div class="space-y-4">
-<h2 class="font-display-lg text-display-lg text-on-surface">Arquitectando el <br><span class="text-tertiary">Futuro.</span></h2>
-<div class="hud-line mb-6"></div>
-<p class="font-body-lg text-on-surface-variant">
-                            Soy un ingeniero multidisciplinario operando en la intersección de IA, GIS y arquitectura multiplataforma. Mi trabajo se centra en construir sistemas resilientes que manejan datos espaciales complejos y automatización inteligente.
-                        </p>
-<p class="font-body-lg text-on-surface-variant">
-                            Ya sea orquestando aplicaciones Flutter de alto rendimiento o desplegando infraestructuras GIS escalables mediante Docker y GeoServer, mi misión es entregar excelencia técnica de alta precisión.
-                        </p>
-</div>
-<div class="grid grid-cols-2 gap-6 pt-6">
-<div class="glass-panel p-4 rounded-lg border-l-2 border-l-tertiary">
-<span class="material-symbols-outlined text-tertiary mb-2">auto_awesome</span>
-<h4 class="font-label-caps text-on-surface text-[12px] mb-1">ESTRATEGIA IA</h4>
-<p class="text-[11px] text-on-surface-variant opacity-60">Redes neuronales y automatización</p>
-</div>
-<div class="glass-panel p-4 rounded-lg border-l-2 border-l-secondary">
-<span class="material-symbols-outlined text-secondary mb-2">map</span>
-<h4 class="font-label-caps text-on-surface text-[12px] mb-1">ESPECIALISTA GIS</h4>
-<p class="text-[11px] text-on-surface-variant opacity-60">Visualización de datos espaciales</p>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Skills Section -->
-<section class="py-32 bg-surface-container-lowest relative overflow-hidden" id="skills">
-<div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#00dce6 1px, transparent 1px); background-size: 40px 40px;"></div>
-<div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop reveal active">
-<div class="text-center mb-20">
-<h2 class="font-display-lg text-headline-md md:text-display-lg mb-4">Arsenal <span class="text-tertiary">Principal</span></h2>
-<p class="font-label-caps text-on-surface-variant">Competencia técnica y conjuntos de herramientas especializadas</p>
-</div>
-<div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-<!-- Skill Item -->
-<div class="space-y-3 p-6 glass-panel rounded-xl group hover:border-tertiary/40 transition-all duration-500">
-<div class="flex justify-between items-center">
-<span class="font-label-caps text-on-surface">Flutter &amp; Dart</span>
-<span class="text-tertiary font-display-lg text-body-lg">95%</span>
-</div>
-<div class="w-full bg-white/5 h-[4px] rounded-full overflow-hidden">
-<div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="95%" style="width: 95%;"></div>
-</div>
-</div>
-<div class="space-y-3 p-6 glass-panel rounded-xl group hover:border-tertiary/40 transition-all duration-500">
-<div class="flex justify-between items-center">
-<span class="font-label-caps text-on-surface">GIS &amp; GeoServer</span>
-<span class="text-tertiary font-display-lg text-body-lg">90%</span>
-</div>
-<div class="w-full bg-white/5 h-[4px] rounded-full overflow-hidden">
-<div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="90%" style="width: 90%;"></div>
-</div>
-</div>
-<div class="space-y-3 p-6 glass-panel rounded-xl group hover:border-tertiary/40 transition-all duration-500">
-<div class="flex justify-between items-center">
-<span class="font-label-caps text-on-surface">IA &amp; OpenCV</span>
-<span class="text-tertiary font-display-lg text-body-lg">85%</span>
-</div>
-<div class="w-full bg-white/5 h-[4px] rounded-full overflow-hidden">
-<div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="85%" style="width: 85%;"></div>
-</div>
-</div>
-<div class="space-y-3 p-6 glass-panel rounded-xl group hover:border-tertiary/40 transition-all duration-500">
-<div class="flex justify-between items-center">
-<span class="font-label-caps text-on-surface">PostgreSQL</span>
-<span class="text-tertiary font-display-lg text-body-lg">92%</span>
-</div>
-<div class="w-full bg-white/5 h-[4px] rounded-full overflow-hidden">
-<div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="92%" style="width: 92%;"></div>
-</div>
-</div>
-<div class="space-y-3 p-6 glass-panel rounded-xl group hover:border-tertiary/40 transition-all duration-500">
-<div class="flex justify-between items-center">
-<span class="font-label-caps text-on-surface">Linux &amp; Docker</span>
-<span class="text-tertiary font-display-lg text-body-lg">88%</span>
-</div>
-<div class="w-full bg-white/5 h-[4px] rounded-full overflow-hidden">
-<div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="88%" style="width: 88%;"></div>
-</div>
-</div>
-<div class="space-y-3 p-6 glass-panel rounded-xl group hover:border-tertiary/40 transition-all duration-500">
-<div class="flex justify-between items-center">
-<span class="font-label-caps text-on-surface">Arquitectura Cloud</span>
-<span class="text-tertiary font-display-lg text-body-lg">80%</span>
-</div>
-<div class="w-full bg-white/5 h-[4px] rounded-full overflow-hidden">
-<div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="80%" style="width: 80%;"></div>
-</div>
-</div>
-</div>
-</div>
-</section>
-<!-- Projects Section -->
+                </div>
+            </div>
 
-<!-- Contact Section -->
-<section class="py-32 px-margin-mobile md:px-margin-desktop reveal active" id="contact">
-<div class="max-w-3xl mx-auto glass-panel p-12 rounded-3xl border-white/5 relative overflow-hidden">
-<div class="absolute top-0 right-0 p-8 text-[100px] font-display-lg text-white/[0.02] select-none leading-none pointer-events-none">SYNC</div>
-<h2 class="font-display-lg text-headline-md text-tertiary mb-8">Iniciar Conexión</h2>
-<form class="space-y-8">
-<div class="group relative">
-<label class="block font-label-caps text-[10px] text-on-surface-variant mb-2 group-focus-within:text-tertiary transition-colors">IDENTIFICADOR</label>
-<input class="w-full bg-transparent border-b border-white/20 py-3 text-on-surface focus:outline-none focus:border-tertiary transition-all placeholder:text-white/10" placeholder="Su Nombre" type="text">
-</div>
-<div class="group relative">
-<label class="block font-label-caps text-[10px] text-on-surface-variant mb-2 group-focus-within:text-tertiary transition-colors">DIRECCIÓN DE ENCRIPTACIÓN</label>
-<input class="w-full bg-transparent border-b border-white/20 py-3 text-on-surface focus:outline-none focus:border-tertiary transition-all placeholder:text-white/10" placeholder="Email@Red.com" type="email">
-</div>
-<div class="group relative">
-<label class="block font-label-caps text-[10px] text-on-surface-variant mb-2 group-focus-within:text-tertiary transition-colors">DATOS DE TRANSMISIÓN</label>
-<textarea class="w-full bg-transparent border-b border-white/20 py-3 text-on-surface focus:outline-none focus:border-tertiary transition-all placeholder:text-white/10 resize-none" placeholder="Hola, tengo una misión para ti..." rows="4"></textarea>
-</div>
-<button class="w-full py-4 bg-white/5 border border-white/10 font-label-caps tracking-[0.2em] hover:bg-tertiary hover:text-on-tertiary hover:border-tertiary transition-all duration-500 uppercase">Enviar Señal</button>
-</form>
-</div>
-</section>
-</main>
-<!-- Footer -->
-<footer class="w-full border-t border-outline-variant/20 bg-surface-container-lowest flex flex-col md:flex-row justify-between items-center py-12 px-margin-desktop max-w-container-max mx-auto w-full opacity-80 hover:opacity-100 transition-opacity">
-<div class="font-display-lg text-body-lg font-bold text-on-surface mb-6 md:mb-0">LUIS LEYTON</div>
-<div class="text-on-surface-variant font-label-caps text-[10px] order-3 md:order-2">© 2024 LUIS LEYTON. DISEÑADO PARA EL FUTURO.</div>
-<div class="flex gap-6 order-2 md:order-3 mb-6 md:mb-0">
-<a class="font-label-caps text-on-surface-variant hover:text-tertiary transition-colors duration-300" href="https://github.com/luileyton/lui.leyton">Github</a>
-<a class="font-label-caps text-on-surface-variant hover:text-tertiary transition-colors duration-300" href="https://www.linkedin.com/in/luis-leyton/">LinkedIn</a>
+            <!-- Scroll Indicator -->
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 flex flex-col items-center gap-4 opacity-40">
+                <span class="font-label-caps text-[10px]">SCROLL PARA EXPLORAR</span>
+                <div class="w-[1px] h-20 bg-gradient-to-b from-tertiary to-transparent animate-pulse"></div>
+            </div>
+        </section>
 
-</div>
-</footer>
-<script>
+        <!-- About Section -->
+        <section class="py-20 md:py-32 px-margin-mobile md:px-margin-desktop max-w-container-max mx-auto reveal" id="about">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+                <!-- Profile Image with HUD -->
+                <div class="relative group">
+                    <div class="absolute -inset-8 bg-tertiary/10 blur-3xl rounded-full opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
+                    <div class="glass-panel p-1 rotate-1 group-hover:rotate-0 transition-transform duration-700">
+                        <img alt="Luis Leyton" class="w-full aspect-square object-cover" src="https://lh3.googleusercontent.com/aida/ADBb0ui01XELkUV3Pv9M_lO8GPYbYrTq4AUMbT_ZT2nk2ELOuwTvy4lhhDYWP3QbdB1EsngRnnkLQIYCWKVmSzH7OOwMM9zA=s400">
+                    </div>
+                    <!-- Stat Card -->
+                    <div class="absolute -bottom-6 -right-6 glass-panel p-6 hidden md:block border-tertiary/30">
+                        <div class="text-tertiary font-headline-md text-lg">10+</div>
+                        <div class="font-label-caps text-[10px] text-on-surface-variant">AÑOS DE CÓDIGO</div>
+                    </div>
+                </div>
+
+                <!-- About Content -->
+                <div class="space-y-8">
+                    <div class="space-y-4">
+                        <h2 class="font-display-lg text-display-lg md:text-[80px] text-on-surface tracking-tighter leading-[0.9]">
+                            Arquitectando el<br><span class="text-tertiary">Futuro.</span>
+                        </h2>
+                        <div class="hud-line mb-6"></div>
+                        <p class="font-body-lg text-on-surface-variant">
+                            Soy un ingeniero multidisciplinario operando en la intersección de IA, GIS y arquitectura multiplataforma. Mi trabajo se centra en construir sistemas resilientes que anticipan las necesidades del mañana.
+                        </p>
+                        <p class="font-body-lg text-on-surface-variant">
+                            Ya sea orquestando aplicaciones Flutter de alto rendimiento o desplegando infraestructuras GIS escalables mediante Docker y GeoServer, mi misión es entregar excelencia engineered.
+                        </p>
+                    </div>
+
+                    <!-- Capability Cards -->
+                    <div class="grid grid-cols-2 gap-4">
+                        <div class="glass-panel p-4 border-l-2 border-l-tertiary">
+                            <div class="text-tertiary mb-2">✦</div>
+                            <h4 class="font-label-caps text-on-surface text-[11px] mb-1">ESTRATEGIA IA</h4>
+                            <p class="text-[11px] text-on-surface-variant opacity-60">Redes neuronales y automatización</p>
+                        </div>
+                        <div class="glass-panel p-4 border-l-2 border-l-secondary">
+                            <div class="text-secondary mb-2">◆</div>
+                            <h4 class="font-label-caps text-on-surface text-[11px] mb-1">ESPECIALISTA GIS</h4>
+                            <p class="text-[11px] text-on-surface-variant opacity-60">Visualización de datos espaciales</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section class="py-20 md:py-32 bg-surface-container-lowest relative overflow-hidden" id="skills">
+            <div class="absolute inset-0 opacity-5 pointer-events-none" style="background-image: radial-gradient(#00dce6 1px, transparent 1px); background-size: 40px 40px;"></div>
+
+            <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop reveal">
+                <div class="text-center mb-20">
+                    <h2 class="font-display-lg text-headline-md md:text-display-lg mb-4 text-on-surface tracking-tighter">
+                        Arsenal <span class="text-tertiary">Principal</span>
+                    </h2>
+                    <p class="font-label-caps text-on-surface-variant text-xs">Competencia técnica y conjuntos de herramientas especializadas</p>
+                </div>
+
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+                    <!-- Skill Items -->
+                    <div class="space-y-3 p-6 glass-panel group hover:border-tertiary/40 transition-all duration-500">
+                        <div class="flex justify-between items-center">
+                            <span class="font-label-caps text-on-surface text-xs">Flutter & Dart</span>
+                            <span class="text-tertiary font-body-md text-sm">95%</span>
+                        </div>
+                        <div class="w-full bg-white/5 h-[3px] overflow-hidden">
+                            <div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="95%" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 p-6 glass-panel group hover:border-tertiary/40 transition-all duration-500">
+                        <div class="flex justify-between items-center">
+                            <span class="font-label-caps text-on-surface text-xs">GIS & GeoServer</span>
+                            <span class="text-tertiary font-body-md text-sm">90%</span>
+                        </div>
+                        <div class="w-full bg-white/5 h-[3px] overflow-hidden">
+                            <div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="90%" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 p-6 glass-panel group hover:border-tertiary/40 transition-all duration-500">
+                        <div class="flex justify-between items-center">
+                            <span class="font-label-caps text-on-surface text-xs">IA & OpenCV</span>
+                            <span class="text-tertiary font-body-md text-sm">85%</span>
+                        </div>
+                        <div class="w-full bg-white/5 h-[3px] overflow-hidden">
+                            <div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="85%" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 p-6 glass-panel group hover:border-tertiary/40 transition-all duration-500">
+                        <div class="flex justify-between items-center">
+                            <span class="font-label-caps text-on-surface text-xs">PostgreSQL</span>
+                            <span class="text-tertiary font-body-md text-sm">92%</span>
+                        </div>
+                        <div class="w-full bg-white/5 h-[3px] overflow-hidden">
+                            <div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="92%" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 p-6 glass-panel group hover:border-tertiary/40 transition-all duration-500">
+                        <div class="flex justify-between items-center">
+                            <span class="font-label-caps text-on-surface text-xs">Linux & Docker</span>
+                            <span class="text-tertiary font-body-md text-sm">88%</span>
+                        </div>
+                        <div class="w-full bg-white/5 h-[3px] overflow-hidden">
+                            <div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="88%" style="width: 0%;"></div>
+                        </div>
+                    </div>
+
+                    <div class="space-y-3 p-6 glass-panel group hover:border-tertiary/40 transition-all duration-500">
+                        <div class="flex justify-between items-center">
+                            <span class="font-label-caps text-on-surface text-xs">Arquitectura Cloud</span>
+                            <span class="text-tertiary font-body-md text-sm">80%</span>
+                        </div>
+                        <div class="w-full bg-white/5 h-[3px] overflow-hidden">
+                            <div class="progress-bar-fill h-full bg-tertiary neon-glow-cyan" data-percent="80%" style="width: 0%;"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="py-20 md:py-32 px-margin-mobile md:px-margin-desktop reveal" id="contact">
+            <div class="max-w-3xl mx-auto glass-panel-lg p-12 md:p-16 border-white/5 relative overflow-hidden">
+                <div class="absolute top-0 right-0 p-8 text-[80px] md:text-[100px] font-display-lg text-white/[0.02] select-none leading-none pointer-events-none tracking-tighter">
+                    SYNC
+                </div>
+
+                <h2 class="font-display-lg text-headline-md md:text-[60px] text-tertiary mb-12 tracking-tighter relative z-10">
+                    Iniciar Conexión
+                </h2>
+
+                <form class="space-y-10 relative z-10">
+                    <!-- Name Input -->
+                    <div class="group relative">
+                        <label class="block font-label-caps text-[10px] text-on-surface-variant mb-2 group-focus-within:text-tertiary transition-colors">
+                            IDENTIFICADOR
+                        </label>
+                        <input 
+                            class="w-full py-3 text-on-surface placeholder:text-white/10" 
+                            placeholder="Su Nombre" 
+                            type="text">
+                    </div>
+
+                    <!-- Email Input -->
+                    <div class="group relative">
+                        <label class="block font-label-caps text-[10px] text-on-surface-variant mb-2 group-focus-within:text-tertiary transition-colors">
+                            DIRECCIÓN DE ENCRIPTACIÓN
+                        </label>
+                        <input 
+                            class="w-full py-3 text-on-surface placeholder:text-white/10" 
+                            placeholder="Email@Red.com" 
+                            type="email">
+                    </div>
+
+                    <!-- Message Input -->
+                    <div class="group relative">
+                        <label class="block font-label-caps text-[10px] text-on-surface-variant mb-2 group-focus-within:text-tertiary transition-colors">
+                            DATOS DE TRANSMISIÓN
+                        </label>
+                        <textarea 
+                            class="w-full py-3 text-on-surface placeholder:text-white/10 resize-none min-h-[120px]" 
+                            placeholder="Hola, voy a contratar tus servicios..."></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button 
+                        type="submit"
+                        class="w-full py-4 bg-white/5 border border-white/10 font-label-caps tracking-[0.2em] text-xs hover:bg-tertiary hover:text-on-tertiary hover:border-tertiary transition-all duration-500 uppercase">
+                        Enviar Señal
+                    </button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="w-full border-t border-outline-variant/20 bg-surface-container-lowest">
+        <div class="max-w-container-max mx-auto px-margin-mobile md:px-margin-desktop py-12 flex flex-col md:flex-row justify-between items-center gap-6">
+            <div class="font-display-lg text-body-lg font-bold text-on-surface">LUIS LEYTON</div>
+            <div class="text-on-surface-variant font-label-caps text-[10px]">© 2024 LUIS LEYTON. DISEÑADO PARA EL FUTURO.</div>
+            <div class="flex gap-6">
+                <a class="font-label-caps text-on-surface-variant hover:text-tertiary transition-colors duration-300 text-xs" href="https://github.com/luileyton">Github</a>
+                <a class="font-label-caps text-on-surface-variant hover:text-tertiary transition-colors duration-300 text-xs" href="https://www.linkedin.com/in/luis-leyton/">LinkedIn</a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
         // Custom Cursor Logic
         const cursor = document.getElementById('cursor');
         const dot = document.getElementById('dot');
         
         document.addEventListener('mousemove', (e) => {
-            cursor.style.left = e.clientX + 'px';
-            cursor.style.top = e.clientY + 'px';
-            dot.style.left = e.clientX + 'px';
-            dot.style.top = e.clientY + 'px';
+            cursor.style.left = (e.clientX - 10) + 'px';
+            cursor.style.top = (e.clientY - 10) + 'px';
+            dot.style.left = (e.clientX - 2) + 'px';
+            dot.style.top = (e.clientY - 2) + 'px';
         });
 
         document.querySelectorAll('a, button').forEach(item => {
@@ -390,11 +614,13 @@
                 cursor.style.width = '60px';
                 cursor.style.height = '60px';
                 cursor.style.backgroundColor = 'rgba(0, 220, 230, 0.1)';
+                cursor.style.borderColor = '#00dce6';
             });
             item.addEventListener('mouseleave', () => {
                 cursor.style.width = '20px';
                 cursor.style.height = '20px';
                 cursor.style.backgroundColor = 'transparent';
+                cursor.style.borderColor = '#00dce6';
             });
         });
 
@@ -470,7 +696,7 @@
         }
 
         function initParticles() {
-            for (let i = 0; i < 100; i++) {
+            for (let i = 0; i < 80; i++) {
                 particles.push(new Particle());
             }
         }
@@ -525,6 +751,5 @@
             });
         });
     </script>
-
-
-</body></html>
+</body>
+</html>
