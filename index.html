@@ -412,7 +412,7 @@
                 <div class="relative group">
                     <div class="absolute -inset-8 bg-tertiary/10 blur-3xl rounded-full opacity-0 group-hover:opacity-40 transition-opacity duration-500"></div>
                     <div class="glass-panel p-1 rotate-1 group-hover:rotate-0 transition-transform duration-700">
-                        <img alt="Luis Leyton" class="w-full aspect-square object-cover" src="https://media.licdn.com/dms/image/v2/C4E03AQGEKlVslS2QUA/profile-displayphoto-shrink_800_800/profile-displayphoto-shrink_800_800/0/1553603239727?e=1781136000&v=beta&t=41cVQoy9SWko8C3Q4R2DQoUk56xzDF5TTKNh6i1JhoY">
+                        <img alt="Luis Leyton" class="w-full aspect-square object-cover" src="https://media.licdn.com/dms/image/v2/C4E03AQGEKlVslS2QUA/profile-displayphoto-shrink_800_800/profile-displ[...]
                     </div>
                     <!-- Stat Card -->
                     <div class="absolute -bottom-6 -right-6 glass-panel p-6 hidden md:block border-tertiary/30">
@@ -429,10 +429,10 @@
                         </h2>
                         <div class="hud-line mb-6"></div>
                         <p class="font-body-lg text-on-surface-variant">
-                            Soy un ingeniero multidisciplinario operando en la intersección de IA, GIS y arquitectura multiplataforma. Mi trabajo se centra en construir sistemas resilientes que anticipan las necesidades del mañana.
+                            Soy un ingeniero multidisciplinario operando en la intersección de IA, GIS y arquitectura multiplataforma. Mi trabajo se centra en construir sistemas resilientes que antic[...]
                         </p>
                         <p class="font-body-lg text-on-surface-variant">
-                            Ya sea orquestando aplicaciones Flutter de alto rendimiento o desplegando infraestructuras GIS escalables mediante Docker y GeoServer, mi misión es entregar excelencia engineered.
+                            Ya sea orquestando aplicaciones Flutter de alto rendimiento o desplegando infraestructuras GIS escalables mediante Docker y GeoServer, mi misión es entregar excelencia eng[...]
                         </p>
                     </div>
 
@@ -541,46 +541,23 @@
                     Iniciar Conexión
                 </h2>
 
-                <form class="space-y-10 relative z-10">
-                    <!-- Name Input -->
-                    <div class="group relative">
-                        <label class="block font-label-caps text-[10px] text-on-surface-variant mb-2 group-focus-within:text-tertiary transition-colors">
-                            IDENTIFICADOR
-                        </label>
-                        <input 
-                            class="w-full py-3 text-on-surface placeholder:text-white/10" 
-                            placeholder="Su Nombre" 
-                            type="text">
-                    </div>
+                <div class="flex flex-col md:flex-row gap-6 relative z-10">
+                    <!-- LinkedIn Button -->
+                    <a 
+                        href="https://www.linkedin.com/in/luis-leyton/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        class="flex-1 py-4 btn-primary font-label-caps tracking-[0.2em] text-xs relative overflow-hidden flex items-center justify-center gap-2">
+                        <span class="relative z-10">Conectar LinkedIn</span>
+                    </a>
 
-                    <!-- Email Input -->
-                    <div class="group relative">
-                        <label class="block font-label-caps text-[10px] text-on-surface-variant mb-2 group-focus-within:text-tertiary transition-colors">
-                            DIRECCIÓN DE ENCRIPTACIÓN
-                        </label>
-                        <input 
-                            class="w-full py-3 text-on-surface placeholder:text-white/10" 
-                            placeholder="Email@Red.com" 
-                            type="email">
-                    </div>
-
-                    <!-- Message Input -->
-                    <div class="group relative">
-                        <label class="block font-label-caps text-[10px] text-on-surface-variant mb-2 group-focus-within:text-tertiary transition-colors">
-                            DATOS DE TRANSMISIÓN
-                        </label>
-                        <textarea 
-                            class="w-full py-3 text-on-surface placeholder:text-white/10 resize-none min-h-[120px]" 
-                            placeholder="Hola, voy a contratar tus servicios..."></textarea>
-                    </div>
-
-                    <!-- Submit Button -->
-                    <button 
-                        type="submit"
-                        class="w-full py-4 bg-white/5 border border-white/10 font-label-caps tracking-[0.2em] text-xs hover:bg-tertiary hover:text-on-tertiary hover:border-tertiary transition-all duration-500 uppercase">
-                        Enviar Señal
-                    </button>
-                </form>
+                    <!-- Email Button -->
+                    <a 
+                        href="mailto:lui.leyton@duocuc.cl"
+                        class="flex-1 py-4 btn-ghost font-label-caps tracking-[0.2em] text-xs relative overflow-hidden flex items-center justify-center gap-2">
+                        <span class="relative z-10">Enviar Email</span>
+                    </a>
+                </div>
             </div>
         </section>
     </main>
